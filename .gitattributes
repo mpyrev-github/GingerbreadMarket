@@ -1,2 +1,3 @@
-*.html *.cshtml linguist-vendored
+*.html linguist-vendored
+*.cshtml linguist-vendored
 *.cs linguist-vendored=false
