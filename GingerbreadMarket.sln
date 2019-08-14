@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GingerbreadMarket", "GingerbreadMarket\GingerbreadMarket.csproj", "{80F2D9E8-EC30-4529-9A18-5040B5E360D6}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29201.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GingerbreadMarket", "GingerbreadMarket\GingerbreadMarket.csproj", "{A300E1F4-3D2C-428B-9581-9B810099EFE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{80F2D9E8-EC30-4529-9A18-5040B5E360D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{80F2D9E8-EC30-4529-9A18-5040B5E360D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{80F2D9E8-EC30-4529-9A18-5040B5E360D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{80F2D9E8-EC30-4529-9A18-5040B5E360D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A300E1F4-3D2C-428B-9581-9B810099EFE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A300E1F4-3D2C-428B-9581-9B810099EFE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A300E1F4-3D2C-428B-9581-9B810099EFE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A300E1F4-3D2C-428B-9581-9B810099EFE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F0C0D64-BC6C-4FD1-A615-77B727D56354}
 	EndGlobalSection
 EndGlobal
