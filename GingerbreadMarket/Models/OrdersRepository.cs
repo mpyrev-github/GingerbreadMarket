@@ -8,7 +8,7 @@ namespace GingerbreadMarket.Models
     public class OrdersRepository
     {
         private static OrdersRepository repo = new OrdersRepository();
-
+        private static OrdersContext db = new OrdersContext();
         public static OrdersRepository Current
         {
             get
@@ -17,32 +17,21 @@ namespace GingerbreadMarket.Models
             }
         }
 
-        private List<Order> data = new List<Order>
-        {
-            new Order
-            {
-                Id = 1, Count = 1, Price = 2.2, Email = "aaa@m.ru", IsSell = true
-            },
-            new Order
-            {
-                Id = 2, Count = 10, Price = 1.0, Email = "111@g.com"
-            }
-        };
-
         public IEnumerable<Order> GetAll()
         {
-            return data;
+            return db.Orders.ToList();
         }
 
         public Order Get(int id)
         {
-            return data.Where(o => o.Id == id).FirstOrDefault();
+            return db.Orders.Where(o => o.Id == id).FirstOrDefault();
         }
 
         public Order Add(Order item)
         {
-            item.Id = data.Count + 1;
-            data.Add(item);
+            item.Id = db.Orders.Last().Id + 1;
+            db.Orders.Add(item);
+            db.SaveChanges();
             return item;
         }
         public void Remove(int id)
@@ -50,7 +39,8 @@ namespace GingerbreadMarket.Models
             Order item = Get(id);
             if (item != null)
             {
-                data.Remove(item);
+                db.Orders.Remove(item);
+                db.SaveChanges();
             }
         }
 

@@ -12,7 +12,6 @@ namespace GingerbreadMarket.Controllers
 {
     public class HomeController : Controller
     {
-
         OrdersRepository repository = OrdersRepository.Current;
         public IActionResult Index()
         {

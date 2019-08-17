@@ -18,8 +18,11 @@
                 <div id="editor">
                     @Html.Partial("Editor", BuyOrder)
                 </div>
+                <div class="container">
+                    <p class="h4 p-3"><strong>Ордера на продажу</strong></p>
+                </div>
                 <div id="summary">
-                    @Html.Partial("BuySummary", Model)
+                    @Html.Partial("SellSummary", Model)
                 </div>
             </div>
         </div>
@@ -31,8 +34,11 @@
                 <div id="editor">
                     @Html.Partial("Editor", SellOrder)
                 </div>
+                <div class="container">
+                    <p class="h4 p-3"><strong>Ордера на покупку</strong></p>
+                </div>
                 <div id="summary">
-                    @Html.Partial("SellSummary", Model)
+                    @Html.Partial("BuySummary", Model)
                 </div>
             </div>
         </div>
