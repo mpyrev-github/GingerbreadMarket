@@ -1,0 +1,52 @@
+﻿@using GingerbreadMarket.Models
+
+@model IEnumerable<Order>
+@{
+    ViewData["Title"] = "Home Page";
+    var SellOrder = new Order();
+    SellOrder.IsSell = true;
+    var BuyOrder = new Order();
+    BuyOrder.IsSell = false;
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    Купить
+                </div>
+                <div id="editor">
+                    @Html.Partial("Editor", BuyOrder)
+                </div>
+                <div id="summary">
+                    @Html.Partial("BuySummary", Model)
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-danger">
+                <div class="panel-heading">
+                    Продать
+                </div>
+                <div id="editor">
+                    @Html.Partial("Editor", SellOrder)
+                </div>
+                <div id="summary">
+                    @Html.Partial("SellSummary", Model)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Завершенные сделки
+            </div>
+            <div id="summary">
+                @Html.Partial("ComplitedOrders", Model)
+            </div>
+        </div>
+    </div>
+</div>
