@@ -27,6 +27,7 @@ Database structure:
     * IsSell (boolean)
     * Email (text)
 <br />
+
 If you want to try my program, you can [download](https://github.com/vastXgithub/gingerbreadmarket/archive/master.zip) project.
 > Don\`t forget to start the database before starting the program!
 ## The authors
@@ -61,6 +62,7 @@ If you want to try my program, you can [download](https://github.com/vastXgithub
     * IsSell (boolean)
     * Email (text)
 <br />
+
 Если вы хотите попробовать мою программу, вы можете [скачать](https://github.com/vastXgithub/gingerbreadmarket/archive/master.zip) проект.
 > Не забудьте запустить базу данных перед запуском программы!
 ## Авторы
