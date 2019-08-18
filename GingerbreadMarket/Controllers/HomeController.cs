@@ -12,10 +12,10 @@ namespace GingerbreadMarket.Controllers
 {
     public class HomeController : Controller
     {
-        OrdersRepository repository = OrdersRepository.Current;
+        OrdersRepository repository = new OrdersRepository();
         public IActionResult Index()
         {
-            return View(repository.GetAll());
+            return View(repository.GetDb());
         }
 
         public IActionResult Add(Order item)
@@ -35,11 +35,11 @@ namespace GingerbreadMarket.Controllers
             else return View("Index");
         }
 
-        public ActionResult Remove(int Id)
+        public ActionResult RemoveDeals()
         {
             if (ModelState.IsValid)
             {
-                repository.Remove(Id);
+                repository.RemoveDeals();
                 return RedirectToAction("Index");
             }
             else return View("Index");

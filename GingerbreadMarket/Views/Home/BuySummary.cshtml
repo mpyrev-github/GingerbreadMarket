@@ -6,7 +6,7 @@
             <tr><th>Цена, $</th><th>Количество</th><th>Email</th></tr>
         </thead>
         <tbody>
-            @foreach (var item in Model.OrderBy(obj => obj.Price))
+            @foreach (var item in Model.OrderByDescending(obj => obj.Price))
             {
             @if (!item.IsSell) {
             <tr>

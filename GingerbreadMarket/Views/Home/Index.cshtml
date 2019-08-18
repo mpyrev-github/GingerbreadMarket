@@ -1,6 +1,6 @@
 ﻿@using GingerbreadMarket.Models
 
-@model IEnumerable<Order>
+@model OrdersContext
 @{
     ViewData["Title"] = "Home Page";
     var SellOrder = new Order();
@@ -22,7 +22,7 @@
                     <p class="h4 p-3"><strong>Ордера на продажу</strong></p>
                 </div>
                 <div id="summary">
-                    @Html.Partial("SellSummary", Model)
+                    @Html.Partial("SellSummary", Model.Orders)
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
                     <p class="h4 p-3"><strong>Ордера на покупку</strong></p>
                 </div>
                 <div id="summary">
-                    @Html.Partial("BuySummary", Model)
+                    @Html.Partial("BuySummary", Model.Orders)
                 </div>
             </div>
         </div>
@@ -48,10 +48,11 @@
     <div class="row">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Завершенные сделки
+                    Завершенные сделки
+                    (@Html.ActionLink("Очистить", "RemoveDeals"))
             </div>
-            <div id="summary">
-                @Html.Partial("ComplitedOrders", Model)
+            <div id="summary">  
+                @Html.Partial("ComplitedOrders", Model.Deals)
             </div>
         </div>
     </div>
