@@ -25,7 +25,7 @@ namespace GingerbreadMarket.Controllers
                 repository.Add(item);
                 return RedirectToAction("Index");
             }
-            else return View("Index");
+            else return RedirectToAction("Index");
         }
 
         public ActionResult Update(Order item)

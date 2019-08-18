@@ -8,12 +8,13 @@
         <tbody>
             @foreach (var item in Model.OrderByDescending(obj => obj.Price))
             {
-            @if (!item.IsSell) {
-            <tr>
-                <td>@item.Price</td>
-                <td>@item.Count</td>
-                <td>@item.Email</td>
-            </tr>
+                @if (!item.IsSell)
+                {
+                    <tr>
+                        <td>@item.Price</td>
+                        <td>@item.Count</td>
+                        <td>@item.Email</td>
+                    </tr>
                 }
             }
         </tbody>

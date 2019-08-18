@@ -8,6 +8,7 @@
     var BuyOrder = new Order();
     BuyOrder.IsSell = false;
 }
+
 <div class="container">
     <div class="row">
         <div class="col-md-6">
@@ -48,10 +49,10 @@
     <div class="row">
         <div class="panel panel-default">
             <div class="panel-heading">
-                    Завершенные сделки
-                    (@Html.ActionLink("Очистить", "RemoveDeals"))
+                Завершенные сделки
+                (@Html.ActionLink("Очистить", "RemoveDeals"))
             </div>
-            <div id="summary">  
+            <div id="summary">
                 @Html.Partial("ComplitedOrders", Model.Deals)
             </div>
         </div>
