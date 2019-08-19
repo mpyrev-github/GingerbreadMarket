@@ -22,6 +22,11 @@ Database structure:
 > Don\`t forget to start the database before starting the program!
 ## The authors
 * **Mikhail Pyryev** - *Main work* - [vastXgithub](https://github.com/vastXgithub).
+## Main View
+
+![image](https://user-images.githubusercontent.com/36687518/63232990-58832600-c246-11e9-9834-335eb0c9d54d.png)
+
+<br /><br />
 
 ---
 
@@ -47,5 +52,8 @@ Database structure:
 > Не забудьте запустить базу данных перед запуском программы!
 ## Авторы
 * **Михаил Пырьев** - *Основная работа* - [vastXgithub](https://github.com/vastXgithub).
+## Представление
+
+![image](https://user-images.githubusercontent.com/36687518/63232990-58832600-c246-11e9-9834-335eb0c9d54d.png)
 
 <br /><br />
