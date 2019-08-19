@@ -10,6 +10,7 @@ This solution is presented using the postgreSQL database.
 If you want to try my program, you can [download](https://github.com/vastXgithub/gingerbreadmarket/archive/master.zip) project.
 For the program to work, initially, you must install postgreSQL and create the OrdersDb database.
 And add webuser user with webuser password. He must be the owner of the tables.
+
 Database structure:
 * OrdersDb
   * Deals
@@ -46,6 +47,7 @@ Database structure:
 Если вы хотите попробовать мою программу, вы можете [скачать](https://github.com/vastXgithub/gingerbreadmarket/archive/master.zip) проект.
 Для работоспособности программы, первоначально, необходимо установить postgreSQL и создать базу данных OrdersDb.
 И добавить пользователя webuser с паролем webuser. Он должен являться владельцем таблиц.
+
 Структура базы данных:
 * OrdersDb
   * Deals
