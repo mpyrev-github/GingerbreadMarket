@@ -14,14 +14,7 @@ And add webuser user with webuser password. He must be the owner of the tables.
 Database structure:
 * OrdersDb
   * Deals
-    * Id (bigint)
-    * DealDate (date)
-    * BuyDate (date)
-    * SellDate (date)
-    * Price (double precision)
-    * Count (bigint)
-    * BuyEmail (text)
-    * SellEmail (text)
+    ![image](https://user-images.githubusercontent.com/36687518/63232622-fd036900-c242-11e9-9d38-6b01cc86edc9.png)
   * Orders
     * Id (bigint)
     * Date (date)
@@ -51,14 +44,7 @@ Database structure:
 Структура базы данных:
 * OrdersDb
   * Deals
-    * Id (bigint)
-    * DealDate (date)
-    * BuyDate (date)
-    * SellDate (date)
-    * Price (double precision)
-    * Count (bigint)
-    * BuyEmail (text)
-    * SellEmail (text)
+    ![image](https://user-images.githubusercontent.com/36687518/63232622-fd036900-c242-11e9-9d38-6b01cc86edc9.png)
   * Orders
     * Id (bigint)
     * Date (date)
