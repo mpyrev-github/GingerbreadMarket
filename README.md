@@ -2,7 +2,6 @@
 # Language / Язык
 * [English version](https://github.com/vastXgithub/gingerbreadmarket/blob/master/README.md#test-task-for-66bit-company)
 * [Русская версия](https://github.com/vastXgithub/gingerbreadmarket/blob/master/README.md#%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8E-66bit)
-# Test task for 66bit company
 ## Task:
 Create an exchange in the form of a web-system on ASP .NET MVC.
 This solution is presented using the postgreSQL database.
@@ -32,7 +31,6 @@ Database structure:
 
 <br /><br />
 
-# Тестовое задание в компанию 66bit
 ## Поставленная задача:
 Создать биржу в виде web-системы на ASP .NET MVC.
 Данное решение представлено с использованием базы данных postgreSQL.
