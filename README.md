@@ -13,15 +13,10 @@ And add webuser user with webuser password. He must be the owner of the tables.
 
 Database structure:
 * OrdersDb
-  * Deals
+  * Deals <br />
     ![image](https://user-images.githubusercontent.com/36687518/63232622-fd036900-c242-11e9-9d38-6b01cc86edc9.png)
-  * Orders
-    * Id (bigint)
-    * Date (date)
-    * Price (double precision)
-    * Count (bigint)
-    * IsSell (boolean)
-    * Email (text)
+  * Orders <br />
+    ![image](https://user-images.githubusercontent.com/36687518/63232638-3a67f680-c243-11e9-9bcd-7366d1367fb3.png)
 <br />
 
 > Don\`t forget to start the database before starting the program!
@@ -43,15 +38,10 @@ Database structure:
 
 Структура базы данных:
 * OrdersDb
-  * Deals
+  * Deals <br />
     ![image](https://user-images.githubusercontent.com/36687518/63232622-fd036900-c242-11e9-9d38-6b01cc86edc9.png)
-  * Orders
-    * Id (bigint)
-    * Date (date)
-    * Price (double precision)
-    * Count (bigint)
-    * IsSell (boolean)
-    * Email (text)
+  * Orders <br />
+    ![image](https://user-images.githubusercontent.com/36687518/63232638-3a67f680-c243-11e9-9bcd-7366d1367fb3.png)
 <br />
 
 > Не забудьте запустить базу данных перед запуском программы!
