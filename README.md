@@ -7,7 +7,9 @@
 Create an exchange in the form of a web-system on ASP .NET MVC.
 This solution is presented using the postgreSQL database.
 ### Try the program
+If you want to try my program, you can [download](https://github.com/vastXgithub/gingerbreadmarket/archive/master.zip) project.
 For the program to work, initially, you must install postgreSQL and create the OrdersDb database.
+And add webuser user with webuser password. He must be the owner of the tables.
 Database structure:
 * OrdersDb
   * Deals
@@ -28,7 +30,6 @@ Database structure:
     * Email (text)
 <br />
 
-If you want to try my program, you can [download](https://github.com/vastXgithub/gingerbreadmarket/archive/master.zip) project.
 > Don\`t forget to start the database before starting the program!
 ## The authors
 * **Mikhail Pyryev** - *Main work* - [vastXgithub](https://github.com/vastXgithub).
@@ -42,7 +43,9 @@ If you want to try my program, you can [download](https://github.com/vastXgithub
 Создать биржу в виде web-системы на ASP .NET MVC.
 Данное решение представлено с использованием базы данных postgreSQL.
 ### Попробовать программу
+Если вы хотите попробовать мою программу, вы можете [скачать](https://github.com/vastXgithub/gingerbreadmarket/archive/master.zip) проект.
 Для работоспособности программы, первоначально, необходимо установить postgreSQL и создать базу данных OrdersDb.
+И добавить пользователя webuser с паролем webuser. Он должен являться владельцем таблиц.
 Структура базы данных:
 * OrdersDb
   * Deals
@@ -63,7 +66,6 @@ If you want to try my program, you can [download](https://github.com/vastXgithub
     * Email (text)
 <br />
 
-Если вы хотите попробовать мою программу, вы можете [скачать](https://github.com/vastXgithub/gingerbreadmarket/archive/master.zip) проект.
 > Не забудьте запустить базу данных перед запуском программы!
 ## Авторы
 * **Михаил Пырьев** - *Основная работа* - [vastXgithub](https://github.com/vastXgithub).
