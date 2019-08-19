@@ -36,12 +36,12 @@ namespace GingerbreadMarket.Models
             if (item.IsSell)
             {
                 while (db.Orders.Where(o => o.IsSell == false).Count() != 0 && 
-                    item.Price <= db.Orders.Where(o => o.IsSell == false).OrderBy(o => o.Price).First().Price && item.Count != 0 )
+                    item.Price <= db.Orders.Where(o => o.IsSell == false).OrderByDescending(o => o.Price).First().Price && item.Count != 0 )
                     AddDeal(db, item);
             }
             else 
                 while (db.Orders.Where(o => o.IsSell == true).Count() != 0 &&
-                    item.Price >= db.Orders.Where(o => o.IsSell == true).OrderByDescending(o => o.Price).First().Price && item.Count != 0 )
+                    item.Price >= db.Orders.Where(o => o.IsSell == true).OrderBy(o => o.Price).First().Price && item.Count != 0 )
                     AddDeal(db, item);
         }
         private void AddDeal(OrdersContext db, Order item)
@@ -56,7 +56,7 @@ namespace GingerbreadMarket.Models
 
             if (item.IsSell)
             {
-                var BuyDbItem = db.Orders.Where(o => o.IsSell == false).OrderBy(o => o.Price).First();
+                var BuyDbItem = db.Orders.Where(o => o.IsSell == false).OrderByDescending(o => o.Price).First();
                 deal.SellDate = DateTime.Now;
                 deal.BuyDate = BuyDbItem.Date;
                 deal.Price = BuyDbItem.Price;
@@ -76,7 +76,7 @@ namespace GingerbreadMarket.Models
             }
             else
             {
-                var SellDbItem = db.Orders.Where(o => o.IsSell == true).OrderByDescending(o => o.Price).First();
+                var SellDbItem = db.Orders.Where(o => o.IsSell == true).OrderBy(o => o.Price).First();
                 deal.SellDate = SellDbItem.Date;
                 deal.BuyDate = DateTime.Now;
                 deal.Price = SellDbItem.Price;

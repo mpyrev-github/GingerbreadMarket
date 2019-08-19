@@ -23,13 +23,6 @@ namespace GingerbreadMarket.Controllers
             else return RedirectToAction("Index");
         }
 
-        public ActionResult Update(Order item)
-        {
-            if (ModelState.IsValid && repository.Update(item))
-                return RedirectToAction("Index");
-            else return View("Index");
-        }
-
         public ActionResult RemoveDeals()
         {
             if (ModelState.IsValid)
